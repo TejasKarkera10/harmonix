@@ -1,0 +1,68 @@
+site_name: HARMONIX
+site_description: A harmonization pipeline framework for polysomnography data
+site_url: https://TejasKarkera10.github.io/harmonix
+repo_url: https://github.com/TejasKarkera10/harmonix
+repo_name: TejasKarkera10/harmonix
+
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: indigo
+    accent: blue
+  font:
+    text: Source Sans Pro
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+  icon:
+    repo: fontawesome/brands/github
+
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Architecture: architecture.md
+  - Tools:
+      - Overview: tools/index.md
+      - Project Scaffolder: tools/scaffolder.md
+      - PHI Validator: tools/phi-validator.md
+      - cmap Generator: tools/cmap-generator.md
+      - QC Pipeline: tools/qc-pipeline.md
+      - Coverage Dashboard: tools/coverage-dashboard.md
+      - Issues Generator: tools/issues-generator.md
+      - Report Finalizer: tools/report-finalizer.md
+  - Tutorials:
+      - Overview: tutorials/index.md
+      - Your First Dataset: tutorials/first-dataset.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - attr_list
+  - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/TejasKarkera10/harmonix

@@ -1,0 +1,4 @@
+mkdocs-material>=9.0
+pandas>=1.5
+click>=8.0
+rich>=13.0
